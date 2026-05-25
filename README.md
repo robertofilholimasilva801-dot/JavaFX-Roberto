@@ -60,21 +60,21 @@ public class CadastroApp extends Application {
             Pessoa novaPessoa = new Pessoa(nome, cpf, email, telefone);
             listaPessoas.add(novaPessoa);
             
-            System.out.println(" Cadastro salvo com sucesso: " + nome);
+            System.out.println(" Cadastro foi salvo com sucesso: " + nome);
             limparCampos(txtNome, txtCpf, txtEmail, txtTelefone);
         });
 
         // Evento: Cancelar (Limpar campos)
         btnCancelar.setOnAction(e -> {
             limparCampos(txtNome, txtCpf, txtEmail, txtTelefone);
-            System.out.println(" Operação cancelada. Campos limpos.");
+            System.out.println(" Operação foi cancelada. Campos limpos.");
         });
 
         // Evento: Listar (Exibição no console)
         btnListar.setOnAction(e -> {
             System.out.println("\n--- LISTA DE PESSOAS CADASTRADAS ---");
             if (listaPessoas.isEmpty()) {
-                System.out.println("Nenhum registro encontrado.");
+                System.out.println("Nenhum registro foi encontrado.");
             } else {
                 for (Pessoa p : listaPessoas) {
                     System.out.println(p.toString());
