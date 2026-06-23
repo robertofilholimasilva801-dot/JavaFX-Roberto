@@ -15,7 +15,7 @@ public class CadastroApp extends Application {
     // 1. Armazenamento em memória
     private ArrayList<Pessoa> listaPessoas = new ArrayList<>();
 
-    // Classe Pessoa aninhada para manter tudo em um único arquivo
+    // Classe Pessoa alinhada para manter tudo em um arquivo só
     public static class Pessoa {
         private String nome;
         private String cpf;
